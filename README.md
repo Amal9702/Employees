@@ -12,5 +12,6 @@ MVC is an architectural pattern that separates an application into three main lo
 This project is a solution for this task.<br>
 <b>To install:</b>
 1. composer install
-2. npm run dev
-3. php artisan serve
+2. npm install
+3. npm run dev
+4. php artisan serve
