@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::prefix('employees')->group(function (){
+    Route::get('',[EmployeeController::class, 'index'])->name('employees');
+    Route::get('/{id}',[EmployeeController::class, 'show'])->name('employees.show');
+});
